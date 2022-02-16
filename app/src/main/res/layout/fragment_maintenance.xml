@@ -17,6 +17,7 @@
         tools:context=".ui.home.MaintenanceFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBanner"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@color/banner_bg"
@@ -52,5 +53,16 @@
                 tools:text="Maintenance" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_views"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clBanner" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

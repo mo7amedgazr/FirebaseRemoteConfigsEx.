@@ -1,4 +1,4 @@
-package com.app.firebaseconfigs.ui.splash
+package com.app.firebaseconfigs.ui.home
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class SplashViewModel @Inject constructor(private val firebaseRemoteConfigRepository: FirebaseRemoteConfigRepository) :
+class MaintenanceViewModel @Inject constructor(private val firebaseRemoteConfigRepository: FirebaseRemoteConfigRepository) :
     ViewModel() {
 
     val appConfigsLiveData = MutableLiveData<AppConfigs>()
